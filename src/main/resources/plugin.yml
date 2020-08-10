@@ -1,0 +1,20 @@
+name: "${project.artifactId}"
+main: "${project.groupId}.${project.artifactId}"
+version: "${project.version}"
+api-version: "1.16"
+author: "BillyGalbreath"
+description: "Control which spawner eggs can be used on spawner cages with permission nodes"
+
+commands:
+  spawnereggcontrol:
+    description: Reloads the plugin
+    permission: command.spawnereggcontrol
+    usage: /<command> (reload)
+
+permissions:
+  command.spawnereggcontrol:
+    description: Allows to reload the plugin
+    default: op
+  spawnereggcontrol.all:
+    description: Allows to set any entity type
+    default: op
